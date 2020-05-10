@@ -33,6 +33,19 @@ After execute, you won"t see any messages, so just restart the hardware and chec
 
 ## Setting up Remote access for Teams Rooms Console
 
+
+## Additional setting
+It is possible to create a easier experience for [booking rooms in Outlook](https://techcommunity.microsoft.com/t5/exchange-team-blog/easier-room-booking-in-outlook-on-the-web/ba-p/743349).
+```
+Set-Place -Identity "Conf-Room" -AudioDeviceName $null -City "Melbourne" -CountryOrRegion "Australia" -DisplayDeviceName "HP Elite Slice G2" -FloorLabel "Second Level" -GeoCoordinates "-37.8456457; 144.9777676" -IsWheelChairAccessible $true -PostalCode "VIC 3004" -State "Victoria" -Street "XXX St Kilda Rd" -VideoDeviceName $null
+```
+Also you can add this room to a distributiongroup only for rooms, which will detect as catagory in Outlook
+```
+Add-DistributionGroupMember -Identity “Rooms In Melbourne“ -Member conf-room@xxx.com
+```
+
+
+
 ## Relevanted links
 * [MTR devices](https://www.microsoft.com/en-us/microsoft-365/microsoft-teams/across-devices/devices) 
 * [MTR release notes](https://docs.microsoft.com/en-us/microsoftteams/rooms/rooms-release-note) 
