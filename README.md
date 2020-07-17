@@ -40,7 +40,7 @@ Next go to Computer Configuration -> Windows Settings -> Security Settings -> Lo
 ![2](images/2-access-this-computer.png)
 
 Well, now go to Computer Configuration -> Windows Settings -> Security Settings -> Local Policies -> User Rights Assignments and double-click "Access this computer from the network". Also here, select Skype and Administrator user and add them.
-![3](images/3-allow-log-on through-RDS.png)
+![3](images/3-allow-log-on-through-RDS.png)
 
 The last config is enabling Microsoft Remote Desktop. Open the Windows Explorer and right-click to "This PC" and choose "Properties". Next click "Remote settings" and select the tab "Remote". 
 Make sure the checkbox for "Allow Remote Assistance connections to this computer" is enabled and select also "Allow remote connections to this computer" and "Allow connections only from computer running Remote Desktop with Network Level Authentication (recommended)"
