@@ -32,6 +32,18 @@ Add-AppxPackage -ForceApplicationShutdown -Path 'C:\Skype Room System Deployment
 After execute, you won"t see any messages, so just restart the hardware and check the App version in MTR.
 
 ## Setting up Remote access for Teams Rooms Console
+Login with admin credentials (User: admin, Password: sfb) and open the Local Group Policy Editor (gpedit.msc).
+Go to Computer Configuration -> Windows Settings -> Security Settings -> Local Policies -> Security Option and double-click "Accounts: Limit local account use of blank passwords to console login only" and disable this part.
+![1](images/1-limit-local-account.png)
+
+Next go to Computer Configuration -> Windows Settings -> Security Settings -> Local Policies -> User Rights Assignments and double-click "Allow log on through Remote Desktop Service". Click "Add User or Group" and select the Skype and Administrator user.
+![2](images/2-access-this-computer.png)
+
+Well, now go to Computer Configuration -> Windows Settings -> Security Settings -> Local Policies -> User Rights Assignments and double-click "Access this computer from the network". Also here, select Skype and Administrator user and add them.
+![3](images/3-allow-log-on through-RDS.png)
+
+The last config is enabling Microsoft Remote Desktop. Open the Windows Explorer and right-click to "This PC" and choose "Properties". Next click "Remote settings" and select the tab "Remote". 
+Make sure the checkbox for "Allow Remote Assistance connections to this computer" is enabled and select also "Allow remote connections to this computer" and "Allow connections only from computer running Remote Desktop with Network Level Authentication (recommended)"
 
 
 ## Additional setting
