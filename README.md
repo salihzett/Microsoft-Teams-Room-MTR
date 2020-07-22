@@ -27,7 +27,7 @@ After the download the location for the files is `C:\Program Files (x86)\Skype R
 You can find the reference document [here](https://docs.microsoft.com/en-us/microsoftteams/rooms/rooms-operations#to-update-using-powershell).
 I prefere to do this locally directly on the MTR client, so copy the content e.g. in `C:\Temp` and execute:
 ```
-Add-AppxPackage -ForceApplicationShutdown -Path 'C:\Skype Room System Deployment Kit\Temp\$oem$\$1\Rigel\x64\Ship\AppPackages\*\*.appx' -DependencyPath (Get-ChildItem 'C:\Temp\Skype Room System Deployment Kit\$oem$\$1\Rigel\x64\Ship\AppPackages\*\Dependencies\x64\*.appx' | Foreach-Object {$_.FullName})
+Add-AppxPackage -Update -ForceApplicationShutdown -Path 'C:\Temp\Skype Room System Deployment Kit\$oem$\$1\Rigel\x64\Ship\AppPackages\*\*.appx' -DependencyPath (Get-ChildItem 'C:\Temp\Skype Room System Deployment Kit\$oem$\$1\Rigel\x64\Ship\AppPackages\*\Dependencies\x64\*.appx' | Foreach-Object {$_.FullName})
 ```
 After execute, you won"t see any messages, so just restart the hardware and check the App version in MTR.
 
