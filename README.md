@@ -19,7 +19,7 @@ Set-CalendarProcessing -Identity "Conf" -ProcessExternalMeetingMessages $true
 
 ### With Microsoft Store
 Search for Microsoft Store in your Windows 10 enviroment and then the dots icon (...) and click on Downloads. 
-There you should find the app Skype Rooms Systems which is actually Teams Rooms Console.
+There you should find the app Skype Rooms Systems which is actually Teams Rooms Console. Or try this [link](https://www.microsoft.com/en-us/p/skype-room-system/9nblggh5799l?).
 
 ### Manually with PS
 At first you need the [Skype Room System Deployment Kit](https://go.microsoft.com/fwlink/?linkid=851168). 
