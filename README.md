@@ -9,7 +9,7 @@ Set-CalendarProcessing -Identity "Conf" -DeleteSubject $False -AddOrganizerToSub
 ```
 It has to be configured, otherwise MTR will not accept external meeting invitations (DeleteComments to be sure to make MTR clean in the overview) 
 ```
-Set-CalendarProcessing -Identity "Conf" -ProcessExternalMeetingMessages $true -DeleteComments $False
+Set-CalendarProcessing -Identity "Conf" -ProcessExternalMeetingMessages $True -DeleteComments $False
 
 ```
 
