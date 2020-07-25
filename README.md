@@ -7,9 +7,10 @@ It has to be configured, otherwise MTR will show the Organizer as Subject
 ```
 Set-CalendarProcessing -Identity "Conf" -DeleteSubject $False -AddOrganizerToSubject $False
 ```
-It has to be configured, otherwise MTR will not accept external meeting invitations
+It has to be configured, otherwise MTR will not accept external meeting invitations (DeleteComments to be sure to make MTR clean in the overview) 
 ```
-Set-CalendarProcessing -Identity "Conf" -ProcessExternalMeetingMessages $true
+Set-CalendarProcessing -Identity "Conf" -ProcessExternalMeetingMessages $true -DeleteComments $False
+
 ```
 
 
@@ -63,3 +64,5 @@ Add-DistributionGroupMember -Identity “Rooms In Melbourne“ -Member conf-room
 * [MTR release notes](https://docs.microsoft.com/en-us/microsoftteams/rooms/rooms-release-note) 
 * [MTR maintenance and operations](https://docs.microsoft.com/en-us/microsoftteams/rooms/rooms-operations#RemotePS) 
 * [MTR XML config file](https://docs.microsoft.com/en-us/MicrosoftTeams/rooms/xml-config-file) 
+* [MTR manage with Teams Admin Console](https://docs.microsoft.com/en-us/MicrosoftTeams/rooms/rooms-manage#updating-the-microsoft-teams-rooms-os-and-microsoft-teams-rooms-application)
+* []()
