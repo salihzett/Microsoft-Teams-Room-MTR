@@ -68,4 +68,4 @@ Add-DistributionGroupMember -Identity “Rooms In Melbourne“ -Member conf-room
 * [MTR maintenance and operations](https://docs.microsoft.com/en-us/microsoftteams/rooms/rooms-operations#RemotePS) 
 * [MTR XML config file](https://docs.microsoft.com/en-us/MicrosoftTeams/rooms/xml-config-file) 
 * [MTR manage with Teams Admin Console](https://docs.microsoft.com/en-us/MicrosoftTeams/rooms/rooms-manage#updating-the-microsoft-teams-rooms-os-and-microsoft-teams-rooms-application)
-* []()
+* [Easier Room booking in Outlook](https://techcommunity.microsoft.com/t5/exchange-team-blog/easier-room-booking-in-outlook-on-the-web/ba-p/743349)
